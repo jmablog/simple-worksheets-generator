@@ -1,0 +1,47 @@
+# Project options - can change the overall project title
+# and the name of the output directory here
+project:
+  title: "Worksheets"
+  output-dir: "_WORKSHEETS"
+
+# options for all formats - suggested not to change
+from: markdown+raw_attribute+raw_tex
+filters: 
+  - _resources/scripts/shortcodes.lua
+standalone: true
+self-contained: true
+
+# biobliography options - if using other file names
+# or multiple bibliography files, change/add them here
+# Can also change the referencing style here using a
+# different csl file - many more can be found at
+# https://github.com/citation-style-language/styles
+bibliography:
+  - _bib/references.bib
+csl: _bib/citethemright10th.csl
+
+# output format options - change these as required
+format:
+  pdf:
+    template: _resources/templates/latex.tex
+    pdfengine: lualatex
+    fontsize: 12pt # 10, 11, or 12pt
+    mainfont: Helvetica # font used for main text throughout document
+    geometry: margin=1in # page margins
+    linestretch: 1.5 # line spacing
+    hyperrefoptions:
+    - linktocpage=true # have clickable links on the table of contents, not just text
+    - linktoc=all
+    - pdfwindowui
+    - pdfpagemode=FullScreen
+    linkcolor: black # colour of links
+    colorlinks: true
+    toc: true # turn table of contents on/off
+    toc-title: Contents # title of table of contents - change if desired
+    resize-headings: false
+  html:
+    template: _resources/templates/html.html
+    toc: true # turn table of contents on/off
+  docx:
+    reference-doc: _resources/templates/word.docx
+    
