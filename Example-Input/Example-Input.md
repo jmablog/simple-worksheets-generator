@@ -1,6 +1,7 @@
 ---
 title: "Example"
-modulecode: "An example worksheet"
+modulecode: "JA2022"
+subtitle: "An example worksheet"
 abstract: |
     Abstract text, indented by four spaces, will appear before the ToCs in all formats.
 ---

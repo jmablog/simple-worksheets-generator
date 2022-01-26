@@ -40,14 +40,14 @@ The current options are `Aside` (yellow), `Questions` (grey), `Tip` (blue), `Suc
 
 ## Usage
 
-- Install [Quarto](https://quarto.org/docs/getting-started/installation.html). Some additional dependencies may be required, for example, a [TeX installation](https://quarto.org/docs/getting-started/installation.html#tex) if you don't have one already, or Python/R if you intend to use them in your materials - see the Quarto installation page for full details.
+- Install [Quarto](https://quarto.org/docs/getting-started/installation.html). Some additional dependencies may be required, for example, a [TeX installation](https://quarto.org/docs/getting-started/installation.html#tex) if you don't have one already, or Python/R if you intend to use them in your materials - see the Quarto installation page for full details. You might also want to grab [Open Sans](https://www.opensans.com/) for the PDF font, or else change it to one you already have in `_quarto.yml`.
 - Clone or download this repo to your local machine.
 - Write your materials as required - either as plain Markdown files (`.md`) or using Quarto's own file type (`.qmd`). These can be in the base project directory, or stored in sub-folders to more conveniently keep related material together (e.g. image files to be included), in which case the directory structure used will be echoed in the output directory.
 - From a terminal at the base project directory, simply run `quarto render`. Your output files should appear in the `_WORKSHEETS` folder.
 
 ## Customisation
 
-The `_quarto.yml` file contains most of the configuration options for these worksheet - in particular, a lot of the PDF output formatting such as fonts or page margins. These are all either [Quarto project options](https://quarto.org/docs/reference/projects/core.html) or [Pandoc options](https://pandoc.org/MANUAL.html#options) - add or change these as desired.
+The `_quarto.yml` file contains most of the configuration options for these worksheet - in particular, a lot of the PDF output formatting such as fonts (by default I used [Open Sans](https://www.opensans.com/)) or page margins. These are all either [Quarto project options](https://quarto.org/docs/reference/projects/core.html) or [Pandoc options](https://pandoc.org/MANUAL.html#options) - add or change these as desired.
 
 For further customisation, you can simply make changes to the templates themselves in `_resources/templates`. They are named for each output format. If you know CSS / LaTeX / Word styles, go nuts!
 

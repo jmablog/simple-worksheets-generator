@@ -26,7 +26,8 @@ format:
     template: _resources/templates/latex.tex
     pdfengine: lualatex
     fontsize: 12pt # 10, 11, or 12pt
-    mainfont: Helvetica # font used for main text throughout document
+    mainfont: Open Sans # font used for main text throughout document
+    sansfont: Open Sans # font used for header text throughout document
     geometry: margin=1in # page margins
     linestretch: 1.5 # line spacing
     hyperrefoptions:
