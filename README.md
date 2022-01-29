@@ -1,5 +1,7 @@
 A series of templates for [Quarto](https://quarto.org/) to convert a single Markdown input into beautiful and simple Word, HTML, and PDF outputs. As using these templates breaks some useful Quarto built-in functionality, also included is a [Pandoc lua filter](https://pandoc.org/lua-filters.html) to make use of some formatting shortcodes, and add some other useful features.
 
+For an example of the HTML output of this workflow, see [https://jmablog.github.io/jamovi-worksheets/](https://jmablog.github.io/jamovi-worksheets/)
+
 ## Features
 
 **Pop-out boxes:** Use Pandoc's fenced divs feature to create coloured breakout boxes:
