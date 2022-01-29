@@ -45,6 +45,12 @@ The current options are `Aside` (yellow), `Questions` (grey), `Tip` (blue), `Suc
 - Write your materials as required - either as plain Markdown files (`.md`) or using Quarto's own file type (`.qmd`). These can be in the base project directory, or stored in sub-folders to more conveniently keep related material together (e.g. image files to be included), in which case the directory structure used will be echoed in the output directory.
 - From a terminal at the base project directory, simply run `quarto render`. Your output files should appear in the `_WORKSHEETS` folder.
 
+## Post-render script
+
+If (like me) you want to store your outputs alongside your inputs rather than in their own sub-directory (`_WORKSHEETS`), then a post-render step can be added to move all the output files back into their source directories and then cleanup the output directory. This script is written in Typescript to run in Deno, which is included with Quarto, so no extra dependencies are required. It reads the output directory you are using from the `_quarto.yml` file, cycles through all the files and files in sub-directories (to one level deep) in that output directory, and moves them back alongside their source input files. 
+
+In `_quarto.yml`, simply uncomment the line `post-render: _resources/scripts/return-to-source.ts` to use this script.
+
 ## Customisation
 
 The `_quarto.yml` file contains most of the configuration options for these worksheet - in particular, a lot of the PDF output formatting such as fonts (by default I used [Open Sans](https://www.opensans.com/)) or page margins. These are all either [Quarto project options](https://quarto.org/docs/reference/projects/core.html) or [Pandoc options](https://pandoc.org/MANUAL.html#options) - add or change these as desired.
