@@ -165,7 +165,14 @@ $-------------------------------------------------------------------------> lang
     }
 
     .markdown-body img {
+      display: block;
       border-style: none;
+      max-width: 85%;
+      box-sizing: border-box;
+      background-color: #fff;
+      padding: 0;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      margin: 2rem auto;
     }
 
     .markdown-body svg:not(:root) {
@@ -328,12 +335,6 @@ $-------------------------------------------------------------------------> lang
 
     .markdown-body table tr:nth-child(2n) {
       background-color: #f6f8fa
-    }
-
-    .markdown-body img {
-      max-width: 100%;
-      box-sizing: content-box;
-      background-color: #fff
     }
 
     .markdown-body code {
@@ -612,6 +613,15 @@ $-------------------------------------------------------------------------> lang
       padding-bottom: .3em
     }
 
+    p.author {
+      font-size: 1.5em;
+      font-weight: 600;
+      line-height: 1.25;
+      margin-top: 0;
+      margin-bottom: 16px;
+      padding-bottom: .3em
+    }
+
     div.line-block {
       white-space: pre-line
     }
@@ -668,10 +678,6 @@ $-------------------------------------------------------------------------> lang
       margin: 1em 0;
       padding-bottom: .3em;
       border-bottom: 1px solid #eaecef
-    }
-
-    img {
-      padding: 1.5em 0;
     }
 
     .csl-entry {
