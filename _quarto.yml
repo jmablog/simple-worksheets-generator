@@ -5,7 +5,7 @@
 project:
   title: "Worksheets"
   output-dir: "_WORKSHEETS"
-  post-render: _resources/scripts/return-to-source.ts
+  # post-render: _resources/scripts/return-to-source.ts
 
 # options for all formats - suggested not to change
 from: markdown+raw_attribute+raw_tex
